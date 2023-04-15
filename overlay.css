@@ -32,3 +32,63 @@ body {
     font-size: 14px;
     color: #c5b4e3;
 }
+
+/* Add the following style block */
+@keyframes fadeInOut {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.now-playing {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 14px;
+    color: #c5b4e3;
+    opacity: 0;
+    animation: fadeInOut 5s linear infinite;
+}
+
+
+/* Add the following style blocks */
+.particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #c5b4e3;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation-name: float;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.particle-1 {
+    top: 10%;
+    left: 20%;
+    animation-duration: 5s;
+}
+
+.particle-2 {
+    top: 40%;
+    left: 60%;
+    animation-duration: 6s;
+}
+
+.particle-3 {
+    top: 70%;
+    left: 30%;
+    animation-duration: 7s;
+}
+
+.particle-4 {
+    top: 85%;
+    left: 70%;
+    animation-duration: 8s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
